@@ -7,7 +7,7 @@ const FiveStarRating = ({ rating }) => {
   const starFillCount = Math.floor(rating);
 
   const hasHalfStar = rating - parseInt(rating) >= 0.5;
-  console.log("hasHalfStar" + hasHalfStar);
+
   const emptyStarCount = 5 - starFillCount - (hasHalfStar ? 1 : 0);
 
   for (let i = 1; i <= starFillCount; i++) {
