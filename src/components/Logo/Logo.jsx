@@ -6,9 +6,9 @@ const Logo = ({ img, title, subtitle }) => {
     <>
       <div className={s.container}>
         <img src={img} alt="logo" className={s.img} />
-        <div className={s.title}>{title}</div>
-        <div className={s.subtitle}>{subtitle}</div>
+        <span className={s.title}>{title}</span>
       </div>
+      <span className={s.subtitle}>{subtitle}</span>
     </>
   );
 };

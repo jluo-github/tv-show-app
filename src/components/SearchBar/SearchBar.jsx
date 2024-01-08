@@ -31,10 +31,13 @@ const SearchBar = ({ onSubmit }) => {
         onChange={handleChange}
         type="text"
         className={s.input}
-        placeholder="Search"
+        placeholder="Search "
         value={value}
       />
-      <button onClick={handleClick}>Search</button>
+
+      {/* <button onClick={handleClick} className={s.btn}>
+        Search
+      </button> */}
     </>
   );
 };
