@@ -13,7 +13,7 @@ export class TVShowAPI {
     const response = await axios.get(
       `${baseUrl}tv/popular?api_key=${apiKey}&language=en-US&page=1`
     );
-    console.log(response.data.results);
+    // console.log(response.data.results);
     return response.data.results;
     //
     //
@@ -43,7 +43,7 @@ export class TVShowAPI {
     const response = await axios.get(
       `${baseUrl}tv/${tvShowId}/recommendations?api_key=${apiKey}`
     );
-    console.log(response.data.results);
+    // console.log(response.data.results);
     return response.data.results;
 
     // const options = {
@@ -72,7 +72,7 @@ export class TVShowAPI {
     const response = await axios.get(
       `${baseUrl}search/tv?api_key=${apiKey}&query=${title}`
     );
-    console.log(response.data.results);
+    // console.log(response.data.results);
     return response.data.results;
   }
 }
